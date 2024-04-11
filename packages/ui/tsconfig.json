@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["ESNext", "DOM"],
+		"moduleResolution": "Bundler",
+		"esModuleInterop": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"resolveJsonModule": true,
+		"skipDefaultLibCheck": true,
+		"jsx": "preserve",
+		"types": ["node", "vite/client"]
+	},
+	"exclude": ["**/dist/**", "**/node_modules/**"]
+}

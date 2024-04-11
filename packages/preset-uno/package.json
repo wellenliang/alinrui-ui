@@ -1,0 +1,33 @@
+{
+	"name": "@alinrui/preset-uno",
+	"version": "0.0.1",
+	"description": "alinrui-ui unocss preset",
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": ["dist"],
+	"scripts": {
+		"build": "tsup --config tsup.config.ts",
+		"dev": "tsup --watch --config tsup.config.ts",
+		"publish:npm": "pnpm publish --no-git-checks --access public"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"tsup": "^8.0.2"
+	},
+	"dependencies": {
+		"@unocss/core": "^0.59.0",
+		"@unocss/preset-mini": "^0.59.0",
+		"@unocss/preset-uno": "^0.59.0"
+	}
+}

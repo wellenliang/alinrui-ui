@@ -1,0 +1,54 @@
+{
+	"name": "@alinrui/ui",
+	"description": "A headless UI use Unocss and typescript",
+	"packageManager": "pnpm@8.15.5",
+	"version": "0.0.1",
+	"type": "module",
+	"keywords": ["web component", "component", "svelte", "vue", "react"],
+	"license": "MIT",
+	"author": "wellenliang",
+	"homepage": "https://github.com/wellenliang/alinrui-ui#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wellenliang/alinrui-ui.git"
+	},
+	"bugs": {
+		"url": "https://github.com/wellenliang/alinrui-ui/issues"
+	},
+	"main": "dist/index.cjs",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.js"
+		},
+		"./*": "./*"
+	},
+	"files": ["dist", "*.d.ts"],
+	"engines": {
+		"node": ">= 14"
+	},
+	"scripts": {},
+	"dependencies": {
+		"clsx": "^2.1.0",
+		"dayjs": "^1.11.10"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.2.0",
+		"@sveltejs/kit": "^2.5.5",
+		"@sveltejs/package": "^2.3.1",
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"@types/node": "^20.12.7",
+		"@unocss/preset-mini": "^0.59.0",
+		"@unocss/preset-uno": "^0.59.0",
+		"svelte": "^4.2.12",
+		"svelte-check": "^3.6.9",
+		"svelte-preprocess": "^5.1.3",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.4",
+		"unocss": "^0.59.0",
+		"vite": "^5.2.8"
+	}
+}

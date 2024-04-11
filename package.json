@@ -1,0 +1,47 @@
+{
+	"name": "@alinrui/ui-monorepo",
+	"description": "A Headless UI library based Unocss. it will support Svelte, vue, react to make easy youself's website",
+	"private": true,
+	"packageManager": "pnpm@8.15.5",
+	"type": "module",
+	"version": "0.0.1",
+	"keywords": ["svelte", "vue", "react", "component", "ui", "web component"],
+	"license": "MIT",
+	"author": "wellenliang",
+	"homepage": "https://github.com/wellenliang/alinrui-ui#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wellenliang/alinrui-ui.git"
+	},
+	"bugs": {
+		"url": "https://github.com/wellenliang/alinrui-ui/issues"
+	},
+	"scripts": {
+		"init": "pnpm i",
+		"lint": "prettier --check \"./**/*.{svelte, js, ts, tsx, jsx, json, md}\" && eslint .",
+		"format": "prettier --write \"./**/*.{svelte, js, ts, tsx, jsx, json, md}\"",
+		"prepare": "npx simple-git-hooks"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^2.13.2",
+		"@types/node": "^20.12.7",
+		"@typescript-eslint/eslint-plugin": "^7.6.0",
+		"@typescript-eslint/parser": "^7.6.0",
+		"eslint": "^9.0.0",
+		"eslint-config-prettier": "^9.1.0",
+		"lint-staged": "^15.2.2",
+		"prettier": "^3.2.5",
+		"prettier-plugin-svelte": "^3.2.2",
+		"rimraf": "^5.0.5",
+		"simple-git-hooks": "^2.11.1",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.4",
+		"unocss": "^0.59.0"
+	},
+	"lint-staged": {
+		"*.{svelte, js, ts, jsx, tsx, json}": ["prettier --write", "eslint"]
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged"
+	}
+}
